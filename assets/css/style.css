@@ -1,0 +1,210 @@
+:root{
+    --color-crame:#d1b271;
+    --color-yellow:#fed90f;
+    --color-background:#de433f;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background);
+}
+
+.head{
+    width: 215px;
+    height: 405px;
+    position: relative;
+}
+
+.forehead{
+    width: 170px;
+    height: 200px;
+    position: absolute;
+    background-color: var(--color-yellow);
+    border: 1px solid black;
+    /* 60/50 means that: 60 is is the vlaue of curve in x-axis / 50 if the y-axis (/ this is not divide but the way uu write this code)  */
+    border-radius: 60%/50%;
+    transform: rotate(-18deg);
+    top: 10px;
+}
+
+.forehead::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    border-top: 2px solid black;
+    border-radius: 50%;
+    transform: rotate(-20deg);
+    left: 20px;
+    top: -8px;
+}
+
+.forehead::after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    border-top: 2px solid black;
+    border-radius: 50%;
+    transform: rotate(-20deg);
+    left: 35px;
+    top: -18px;
+}
+
+.face-side1{
+    width: 140px;
+    height: 60px;
+    background-color: var(--color-yellow);
+    position: absolute;
+    top: 185px;
+    left: 30px;
+}
+
+.eyes{
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 110px;
+    left: 120px;
+}
+
+.eyes::after{
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: black;
+    border-radius: 50%;
+    top: 40px;
+    left: 30px;
+}
+
+.left-eye{
+    left: 60px;
+    top: 115px;
+}
+
+.left-eye::after{
+    left: 25px;
+}
+
+.neck{
+    width: 125px;
+    height: 150px;
+    position: absolute;
+    background-color: var(--color-yellow);
+    border-left: 1px solid black;
+    border-right: 1px solid black; 
+    left: 27px;
+    top: 200px;
+    transform: rotate(2deg);
+}
+
+.nose{
+    width: 60px;
+    height: 32px;
+    background-color: var(--color-yellow);
+    position: absolute;
+    border: 1px solid black;
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    left: 130px;
+    top: 175px;
+}
+
+.face-side2{
+    width: 40px;
+    height: 60px;
+    background-color: var(--color-yellow);
+    position: absolute;
+    border-left: 1px solid black;
+    top: 165px;
+    left: 22px;
+    transform: rotate(-11deg);
+}
+
+.ear{
+    width: 32px;
+    height: 37px;
+    position: absolute;
+    background-color: var(--color-yellow);
+    border-radius: 50%;
+    border: 1px solid black;
+    top: 200px;
+    left: 10px;
+    transform: rotate(10deg);
+}
+
+.ear::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-top: 1px solid black;
+    border-radius: 50%;
+    top: 8px;
+    left: 8px;
+    transform: rotate(-90deg);
+}
+
+.ear::after{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid black;
+    top: 12px;
+    left: 9px;
+}
+
+.mouth
+{
+    width: 115px;
+    height: 120px;
+    position: absolute;
+    background-color: var(--color-crame);
+    border-radius: 50%;
+    border: 1px solid black;
+    top: 207px;
+    left: 60px;
+}
+
+.mouth::before{
+    content: '';
+    position: absolute;
+    background-color: var(--color-crame);
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    border-right: 1px solid black;
+    top: 62px;
+    left: 98px;
+    transform: rotate(15deg);
+}
+
+.mouth::after{
+    content: '';
+    position: absolute;
+    background-color: var(--color-crame);
+    width: 120px;
+    height: 60px;
+    border-radius: 50%;
+    border-bottom: 1px solid black;
+    top: 20px;
+    left: 30px;
+    transform: rotate(-deg);
+}
